@@ -13,13 +13,13 @@ axios
 .then(response => {
     // console.log(response.data.topics);
 // });
-    const entryPoint2 = document.querySelector('.topics');    
+    const entryPoint2 = document.querySelector('.topics')   
     response.data.topics.forEach(topic => {
-        entryPoint2.appendChild(Tab(topic));
+        entryPoint2.appendChild(Tab(topic))
     })
 })
 .catch(error => {
-    console.log("No data here.", error);
+    console.log("No data here.", error)
 })
 // create function
 function Tab(attr) {
