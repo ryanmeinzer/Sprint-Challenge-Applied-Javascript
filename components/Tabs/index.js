@@ -13,14 +13,15 @@ axios
 .then(response => {
     // console.log(response.data.topics);
 // });
+    const entryPoint2 = document.querySelector('.topics');    
     response.data.topics.forEach(topic => {
-        // const newThing = Tab(item);
-        entryPoint2.appendChild(Tab(topic));
-    });
-});
-// .catch(error => {
-//     console.log("No data here", error);
-// })
+            // const newThing = Tab(item);
+            entryPoint2.appendChild(Tab(topic));
+        })
+})
+.catch(error => {
+    console.log("No data here", error);
+})
 // create function
 function Tab(attr) {
     //create elements 
@@ -32,5 +33,3 @@ function Tab(attr) {
 
     return newTab;
 }
-
-const entryPoint2 = document.querySelector('.topics');
