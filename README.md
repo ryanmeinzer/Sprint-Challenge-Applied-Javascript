@@ -30,7 +30,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+Document Object Model - The DOM is the interface representation of the html page/document through objects that allows us to interact with and manipulate the document structure, content, and styling.
+
 2. What is an event?
+
+An event is 
 
 3. What is an event listener?
 
